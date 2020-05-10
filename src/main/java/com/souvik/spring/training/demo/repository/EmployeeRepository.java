@@ -13,18 +13,13 @@ public interface EmployeeRepository extends MongoRepository<Employee, String>{
 	@Override
 	List<Employee> findAll();
 	
-	@Override
-	default <S extends Employee> List<S> saveAll(Iterable<S> entities) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	default <S extends Employee> List<S> insert(Iterable<S> entities) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
+	/*
+	 * @Override default <S extends Employee> List<S> saveAll(Iterable<S> entities)
+	 * { // TODO Auto-generated method stub return null; }
+	 * 
+	 * @Override default <S extends Employee> List<S> insert(Iterable<S> entities) {
+	 * // TODO Auto-generated method stub return null; }
+	 */
 	/*
 	 * @Override default void delete(Employee entity) { // TODO Auto-generated
 	 * method stub

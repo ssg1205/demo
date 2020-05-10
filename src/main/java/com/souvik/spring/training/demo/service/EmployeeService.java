@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.souvik.spring.training.demo.controller.dao.Employee;
 
-
+@Service
 public interface EmployeeService {
 	
 	public static final Employee employee = new Employee();
