@@ -57,11 +57,13 @@ public class MainRestController {
 	  public void addEmployee(@RequestBody List<Employee> empList){ 
 	  employeeService.addEmployee(empList); }
 	  
-	  @RequestMapping(value = "deleteEmployee",
-			  			method = RequestMethod.POST,
+	  
+	  
+	  @RequestMapping(value = "/deleteEmployee/{empNo}",
+			  			method = RequestMethod.DELETE,
 			  			produces  = {MediaType.APPLICATION_JSON_VALUE})
-	  public void deleteEmployee(@RequestBody Employee emp) {
-		  employeeService.deleteEmployee(emp);
+	  public void deleteEmployee(@PathVariable("empNo") String empNo) {
+		  employeeService.deleteEmployee(empNo);
 	  }
 	  
 	/*

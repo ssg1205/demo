@@ -25,10 +25,17 @@ public interface EmployeeRepository extends MongoRepository<Employee, String>{
 		return null;
 	}
 	
-	@Override
-	default void delete(Employee entity) {
-		// TODO Auto-generated method stub
-		
-	}
+	/*
+	 * @Override default void delete(Employee entity) { // TODO Auto-generated
+	 * method stub
+	 * 
+	 * }
+	 */
+	/*
+	 * @Override default void deleteById(String id) { // TODO Auto-generated method
+	 * stub
+	 * 
+	 * }
+	 */
 	
 }
